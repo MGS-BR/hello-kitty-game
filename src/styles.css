@@ -74,7 +74,7 @@ body {
   filter: blur(0.3px);
 }
 
-.c1 { top: 20px; left: 10px; transform: rotate(-10deg); }
+.c1 { top: 35px; left: 19px; transform: rotate(-10deg); }
 .c2 { top: 40px; right: 20px; transform: rotate(12deg); }
 .c3 { top: 80px; left: 80px; transform: rotate(-8deg); }
 .c4 { top: 110px; right: 100px; transform: rotate(16deg); }
