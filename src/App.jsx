@@ -7,6 +7,13 @@ import fundo1 from "./assets/fundos/fundo1.png";
 import fundo2 from "./assets/fundos/fundo2.png";
 import musica from "./assets/audio/musica.mp3";
 
+// Fundo
+import melody from "./assets/bg/melody.png";
+import kuromi from "./assets/bg/kuromi.png";
+import keroppi from "./assets/bg/keroppi.png";
+import chococat from "./assets/bg/chococat.png";
+import cinnamoroll from "./assets/bg/cinnamoroll.png";
+
 // Ícones cenário
 import cameraIcon from "./assets/icons/camera.png";
 import wardrobeIcon from "./assets/wardrobe.png";
@@ -60,6 +67,18 @@ function App() {
 
   const lookAtual =
     looksSalvos.length > 0 ? looksSalvos[lookSelecionado] : null;
+
+  useEffect(() => {
+    if (guardaroupaAberto) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [guardaroupaAberto]);
 
   useEffect(() => {
     const dados = localStorage.getItem("hello-kitty-looks");
@@ -226,6 +245,49 @@ function App() {
   };
 
   return (
+
+    <>
+
+    <div className="bg-decoracao">
+      <div className="bg-decoracao-inner">
+        <img src={melody} className="bg-char c1" alt="" />
+        <img src={kuromi} className="bg-char c2" alt="" />
+        <img src={keroppi} className="bg-char c3" alt="" />
+        <img src={chococat} className="bg-char c4" alt="" />
+        <img src={cinnamoroll} className="bg-char c5" alt="" />
+
+        <img src={melody} className="bg-char c6" alt="" />
+        <img src={kuromi} className="bg-char c7" alt="" />
+        <img src={keroppi} className="bg-char c8" alt="" />
+        <img src={chococat} className="bg-char c9" alt="" />
+        <img src={cinnamoroll} className="bg-char c10" alt="" />
+
+        <img src={melody} className="bg-char c11" alt="" />
+        <img src={kuromi} className="bg-char c12" alt="" />
+        <img src={keroppi} className="bg-char c13" alt="" />
+        <img src={chococat} className="bg-char c14" alt="" />
+        <img src={cinnamoroll} className="bg-char c15" alt="" />
+
+        <img src={melody} className="bg-char c16" alt="" />
+        <img src={kuromi} className="bg-char c17" alt="" />
+        <img src={keroppi} className="bg-char c18" alt="" />
+        <img src={chococat} className="bg-char c19" alt="" />
+        <img src={cinnamoroll} className="bg-char c20" alt="" />
+
+        <img src={melody} className="bg-char c21" alt="" />
+        <img src={kuromi} className="bg-char c22" alt="" />
+        <img src={keroppi} className="bg-char c23" alt="" />
+        <img src={chococat} className="bg-char c24" alt="" />
+        <img src={cinnamoroll} className="bg-char c25" alt="" />
+
+        <img src={melody} className="bg-char c26" alt="" />
+        <img src={kuromi} className="bg-char c27" alt="" />
+        <img src={keroppi} className="bg-char c28" alt="" />
+        <img src={chococat} className="bg-char c29" alt="" />
+        <img src={cinnamoroll} className="bg-char c30" alt="" />
+      </div>
+    </div>
+
     <div className="container">
       <div className="game-ui">
 
@@ -489,6 +551,7 @@ function App() {
         </div>
       )}
     </div>
+  </>
   );
 }
 
