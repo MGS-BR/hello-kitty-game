@@ -1,16 +1,98 @@
-# React + Vite
+# 🎀 Hello Kitty Dress Up
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um jogo simples de vestir personagens inspirado no universo da Hello Kitty, desenvolvido com foco em estudos de desenvolvimento web, manipulação de camadas de imagens e interface para dispositivos móveis.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Sobre o projeto
 
-## React Compiler
+Este projeto foi criado como forma de aprendizado pessoal, explorando conceitos como:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Manipulação de estados
+- Organização de assets
+- Responsividade mobile
+- Sobreposição de roupas e acessórios
+- Estruturação de jogos simples para web
 
-## Expanding the ESLint configuration
+O jogador pode combinar roupas, acessórios e estilos diferentes na personagem.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📱 Objetivo
+
+O foco principal do projeto é funcionar bem em celulares, com uma interface simples, leve e intuitiva.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- React
+- JavaScript
+- CSS
+- Vite
+
+---
+
+## 📂 Estrutura do projeto
+
+```bash
+src/
+ ├── assets/
+ │    ├── roupas/
+ │    ├── acessorios/
+ │    ├── calcas/
+ │    ├── sapatos/
+ │    └── fundos/
+ │
+ ├── App.jsx
+ ├── styles.css
+ └── main.jsx
+```
+
+---
+
+## 🚀 Como executar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/MGS-BR/hello-kitty-game
+```
+
+Entre na pasta:
+
+```bash
+cd hello-kitty-game
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## ⚠️ Aviso importante
+
+Este projeto **não possui qualquer finalidade comercial**.
+
+Todo o conteúdo foi desenvolvido exclusivamente para fins de:
+
+- estudo pessoal
+- aprendizado
+- prática de programação
+- experimentação artística
+
+Nenhum material presente neste projeto tem o objetivo de infringir direitos autorais ou gerar lucro.
+
+---
+
+Feito para fins educacionais.
