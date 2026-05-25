@@ -57,7 +57,7 @@ src/
 Clone o repositório:
 
 ```bash
-git clone https://github.com/MGS-BR/hello-kitty-game
+git clone https://github.com/MGS-BR/hello-kitty-game.git
 ```
 
 Entre na pasta:
